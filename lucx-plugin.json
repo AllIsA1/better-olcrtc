@@ -1,9 +1,9 @@
 {
   "id": "better-olcrtc",
   "name": "Better olcRTC",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "apiVersion": "1",
-  "description": "Replaces the olcRTC core of the panel by the ghostlane-project fork (olcRTC v0.12.1: VK Calls, MTS Link, SaluteJazz, per-user keys, UDP, direct routes). The panel downloads the reviewed build itself and checks its hash; switch the plugin off and the core stays as it is. Needs Better Cores.",
+  "description": "Does nothing now. It used to replace the olcRTC core with the ghostlane-project fork v0.12.1; since lucx.325 the panel ships that fork itself. Kept installed for the time being; it can be removed.",
   "author": "AllIsA1",
   "license": "MIT",
   "type": "process",
@@ -11,11 +11,5 @@
   "run": {
     "command": "bin/${arch}/betterolcrtc"
   },
-  "permissions": [
-    "api:cores:read",
-    "api:olcrtc:write"
-  ],
-  "requires": [
-    "better-cores"
-  ]
+  "permissions": []
 }
